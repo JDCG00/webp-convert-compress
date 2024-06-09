@@ -3,7 +3,7 @@ import os
 
 def convert_to_webp(input_path, output_path):
     img = Image.open(input_path)
-    img.save(output_path, format='webp', lossless=True)
+    img.save(output_path, format='webp', lossless=False)
     print(f"Imagen convertida y guardada en {output_path}")
 
 def compress_images_to_webp(directory):
